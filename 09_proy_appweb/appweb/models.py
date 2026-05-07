@@ -28,7 +28,7 @@ class Producto:
         if precio <= 0:            
             raise AltaProductoPrecioException("Error: el precio no puede ser negativo o cero")
 
-        if precio > 9999999999:            
+        if precio > 999999999:            
             raise AltaProductoPrecioException("Error: el precio es demasiado grande")
 
         self.id = id

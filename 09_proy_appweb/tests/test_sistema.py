@@ -144,7 +144,7 @@ def test_insertar_producto():
 def test_actualizar_producto_desc():
     #-----------------------------
     # Preparación de los datos  para el test
-    desc = 'camisa rosa'
+    desc = 'camisa bicolor '
     precio = 900
     # insertar producto
     p = Producto(descripcion=desc, precio=precio)
@@ -154,7 +154,7 @@ def test_actualizar_producto_desc():
     # Test para probar la actulización de productos
     # modificar producto
 
-    desc_esperada = "camisa rosa mexicano"
+    desc_esperada = "camisa  colorida"
     registros_esperados = 1
     p.descripcion = desc_esperada
     registros_mod = p.actualizar()
